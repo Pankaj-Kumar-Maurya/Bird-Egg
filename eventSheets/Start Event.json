@@ -1,0 +1,48 @@
+{
+	"name": "Start Event",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Score_restart",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 713584947340738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 485146695041749,
+					"parameters": {
+						"object": "Play"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 489488809250292,
+					"parameters": {
+						"layout": "Layout_1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 713710275410899,
+					"parameters": {
+						"text": "\"\"&Score_restart"
+					}
+				}
+			],
+			"sid": 669392789781644
+		}
+	],
+	"sid": 113584989537123
+}

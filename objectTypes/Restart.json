@@ -1,0 +1,57 @@
+{
+	"name": "Restart",
+	"plugin-id": "Sprite",
+	"sid": 792037314490883,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 458,
+						"height": 458,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4259837,
+						"collisionPoly": {
+							"points": [
+								0.18340611353711792,
+								0.18340611353711792,
+								0.5,
+								0.043668122270742356,
+								0.8144104803493449,
+								0.18340611353711792,
+								0.925764192139738,
+								0.5,
+								0.7903930131004366,
+								0.7903930131004366,
+								0.5,
+								0.9126637554585153,
+								0.2074235807860262,
+								0.7903930131004366,
+								0.07205240174672489,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 530316111332831,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

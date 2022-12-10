@@ -1,0 +1,30 @@
+{
+	"name": "Restart Event",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 694582792503152,
+					"parameters": {
+						"object": "Restart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 252248573837697,
+					"parameters": {
+						"layout": "Layout_1"
+					}
+				}
+			],
+			"sid": 921132749225439
+		}
+	],
+	"sid": 541611283055779
+}

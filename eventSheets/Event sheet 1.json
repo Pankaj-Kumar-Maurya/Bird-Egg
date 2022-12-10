@@ -1,0 +1,184 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 320298732175823
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 769751746799994
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Han",
+					"sid": 410904729497597,
+					"parameters": {
+						"object": "Egg",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Egg",
+					"sid": 913420401540909,
+					"behaviorType": "Custom",
+					"parameters": {
+						"which": "vertical",
+						"speed": "500"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Han",
+					"sid": 381977427834628,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "hanface",
+					"sid": 603364264762365,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 448521754971358
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Collector",
+					"sid": 519953584237812,
+					"parameters": {
+						"object": "Egg"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Egg",
+					"sid": 552968887154548
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 975613311049895,
+					"parameters": {
+						"variable": "Score",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 800764632310229
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 136847066827308
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 234977265996197,
+					"parameters": {
+						"text": "\"\" &Score"
+					}
+				}
+			],
+			"sid": 325556721052049
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Egg",
+					"sid": 298423641446152,
+					"parameters": {
+						"object": "Bar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Egg",
+					"sid": 161171419799627
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 358320620315255,
+					"parameters": {
+						"layout": "Restart_Layout"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 582358077034697,
+					"parameters": {
+						"variable": "Score",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 199580769869252
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 738734914207400
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Han",
+					"sid": 569276972597129,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "hanface",
+					"sid": 475684554270046,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 762344164600585
+		}
+	],
+	"sid": 309903551911814
+}

@@ -1,0 +1,57 @@
+{
+	"name": "hanface",
+	"plugin-id": "Sprite",
+	"sid": 151018581803420,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.49333333333333335,
+						"originY": 0.8933333333333333,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8825475,
+						"collisionPoly": {
+							"points": [
+								0.3233333333333333,
+								0.3233333333333333,
+								0.5,
+								0.043333333333333335,
+								0.6766666666666666,
+								0.32,
+								0.9533333333333334,
+								0.5,
+								0.8566666666666667,
+								0.8566666666666667,
+								0.5,
+								0.89,
+								0.13333333333333333,
+								0.8633333333333333,
+								0.043333333333333335,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 439943162437995,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
